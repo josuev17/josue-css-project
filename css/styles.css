@@ -10,7 +10,12 @@ https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
 
 /* Global Styles
 ----------------------------*/
-
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   color: #343434;
   margin: 0;
@@ -30,6 +35,7 @@ a:hover {
 }
 h1 {
   font-size: 100px;
+  line-height: 1;
 }
 h2 {
   margin: 0;
@@ -41,9 +47,26 @@ h1, h2 {
   margin: 0;
 }
 .content-wrap {
-  width: 800px;
+  max-width: 800px;
+  width: 85%;
   margin: 0 auto;
   padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0px;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
 }
 
 
@@ -53,10 +76,17 @@ header {
   background: #2F3061;
   color: #F7FFF7;
 }
+
 /* About Me
 ----------------------------*/
 .about-me {
   background: #F7FFF7;
+}
+.item {
+  overflow: hidden;
+}
+.item h3 {
+  margin-top: 0px;
 }
 
 /* BUTTON -----------------
@@ -81,14 +111,67 @@ header {
 .work-experience {
   background: #A1C6D7;
 }
+.job-summary {
+  margin: 10px;
+}
 
 /* Education
 ----------------------------*/
-
+.education {
+  background-image: url(../images/pexels-olia-danilevich-5088017.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+.education p {
+  width: 60%;
+}
 
 /* Contact Information
 ----------------------------*/
 footer {
   background: #E88484;
   color: #F7FFF7;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive
+----------------------------*/
+@media screen and (min-width: 750px){
+  .item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr
+  }
+  header, footer {
+    text-align: center;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 749px){
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+
 }
