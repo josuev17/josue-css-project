@@ -50,7 +50,7 @@ h1, h2 {
   max-width: 800px;
   width: 85%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 h3 {
   margin-bottom: 0;
@@ -73,14 +73,14 @@ h3 {
 /* Profile
 ----------------------------*/
 header {
-  background: #2F3061;
+  background: #1B6490;
   color: #F7FFF7;
 }
 
 /* About Me
 ----------------------------*/
 .about-me {
-  background: #F7FFF7;
+  background: #F0F0F0;
 }
 .item {
   overflow: hidden;
@@ -89,31 +89,18 @@ header {
   margin-top: 0px;
 }
 
-/* BUTTON -----------------
-.about-me a {
-  color: #2F3061;
-}
-.about-me .btn {
-  color: #F7FFF7;
-  background: #2F3061;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 5px;
-  display: inline-block;
-}
-.about-me .btn:hover {
-  background: rgba(47, 48, 97, 80%);
-}
-*/
-
 /* Work Experience
 ----------------------------*/
 .work-experience {
-  background: #A1C6D7;
+  background: #F0E5A3;
 }
 .job-summary {
   margin: 10px;
 }
+.job-summary ul {
+  list-style: none;
+}
+
 
 /* Education
 ----------------------------*/
@@ -130,7 +117,7 @@ header {
 /* Contact Information
 ----------------------------*/
 footer {
-  background: #E88484;
+  background: #B2642E;
   color: #F7FFF7;
 }
 .contact-list {
